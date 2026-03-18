@@ -191,12 +191,12 @@ export default function Home() {
 
       {/* Background */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(184,153,111,0.08)_0%,rgba(11,12,16,1)_55%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(212,175,55,0.08)_0%,rgba(10,17,40,1)_55%)]" />
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(184,153,111,1) 1px, transparent 1px), linear-gradient(90deg, rgba(184,153,111,1) 1px, transparent 1px)",
+              "linear-gradient(rgba(212,175,55,1) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,1) 1px, transparent 1px)",
             backgroundSize: "80px 80px",
           }}
         />
@@ -271,22 +271,22 @@ export default function Home() {
                   <circle cx="250" cy="250" r="160" stroke="url(#ring-grad)" strokeWidth="0.75" strokeDasharray="8 12" className="animate-spin-reverse" style={{ transformOrigin: "250px 250px" }} />
                   <circle cx="250" cy="250" r="100" stroke="url(#ring-grad)" strokeWidth="1" className="animate-spin-very-slow" style={{ transformOrigin: "250px 250px" }} />
                   <circle cx="250" cy="250" r="40" fill="url(#core-glow)" />
-                  <circle cx="250" cy="250" r="6" fill="#B8996F" fillOpacity="0.8" />
-                  <circle cx="250" cy="30" r="3" fill="#D4C4A0" fillOpacity="0.6" className="animate-spin-very-slow" style={{ transformOrigin: "250px 250px" }} />
-                  <circle cx="410" cy="250" r="2.5" fill="#B8996F" fillOpacity="0.5" className="animate-spin-reverse" style={{ transformOrigin: "250px 250px" }} />
-                  <circle cx="150" cy="400" r="2" fill="#D4C4A0" fillOpacity="0.4" className="animate-spin-very-slow" style={{ transformOrigin: "250px 250px" }} />
-                  <line x1="250" y1="210" x2="250" y2="30" stroke="#B8996F" strokeOpacity="0.1" strokeWidth="0.5" />
-                  <line x1="290" y1="250" x2="410" y2="250" stroke="#B8996F" strokeOpacity="0.08" strokeWidth="0.5" />
-                  <text x="250" y="258" textAnchor="middle" dominantBaseline="middle" fill="#B8996F" fillOpacity="0.25" fontSize="28" fontFamily="serif" letterSpacing="0.1em">R</text>
+                  <circle cx="250" cy="250" r="6" fill="#D4AF37" fillOpacity="0.8" />
+                  <circle cx="250" cy="30" r="3" fill="#E8D48B" fillOpacity="0.6" className="animate-spin-very-slow" style={{ transformOrigin: "250px 250px" }} />
+                  <circle cx="410" cy="250" r="2.5" fill="#D4AF37" fillOpacity="0.5" className="animate-spin-reverse" style={{ transformOrigin: "250px 250px" }} />
+                  <circle cx="150" cy="400" r="2" fill="#E8D48B" fillOpacity="0.4" className="animate-spin-very-slow" style={{ transformOrigin: "250px 250px" }} />
+                  <line x1="250" y1="210" x2="250" y2="30" stroke="#D4AF37" strokeOpacity="0.1" strokeWidth="0.5" />
+                  <line x1="290" y1="250" x2="410" y2="250" stroke="#D4AF37" strokeOpacity="0.08" strokeWidth="0.5" />
+                  <text x="250" y="258" textAnchor="middle" dominantBaseline="middle" fill="#D4AF37" fillOpacity="0.25" fontSize="28" fontFamily="serif" letterSpacing="0.1em">R</text>
                   <defs>
                     <radialGradient id="core-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 250) scale(40)">
-                      <stop stopColor="#B8996F" stopOpacity="0.15" />
-                      <stop offset="1" stopColor="#0B0C10" stopOpacity="0" />
+                      <stop stopColor="#D4AF37" stopOpacity="0.15" />
+                      <stop offset="1" stopColor="#0A1128" stopOpacity="0" />
                     </radialGradient>
                     <linearGradient id="ring-grad" x1="30" y1="30" x2="470" y2="470" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#D4C4A0" stopOpacity="0.5" />
-                      <stop offset="0.5" stopColor="#B8996F" stopOpacity="0.2" />
-                      <stop offset="1" stopColor="#D4C4A0" stopOpacity="0.4" />
+                      <stop stopColor="#E8D48B" stopOpacity="0.5" />
+                      <stop offset="0.5" stopColor="#D4AF37" stopOpacity="0.2" />
+                      <stop offset="1" stopColor="#E8D48B" stopOpacity="0.4" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -305,7 +305,7 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ PROBLEM ═══════════════════ */}
-      <section id="problem" className="relative bg-[#0e1014]">
+      <section id="problem" className="relative bg-[#0E1830]">
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <FadeSection id="problem-label">
             <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">The Problem</p>
@@ -361,7 +361,7 @@ export default function Home() {
             <div className="rounded-lg bg-obsidian/80 p-6 md:p-10">
               <div className="mb-8 flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="h-2 w-2 rounded-full bg-gold/80 shadow-[0_0_8px_rgba(184,153,111,0.4)]" />
+                  <div className="h-2 w-2 rounded-full bg-gold/80 shadow-[0_0_8px_rgba(212,175,55,0.4)]" />
                   <span className="font-[var(--font-inter)] text-[10px] uppercase tracking-[0.2em] text-ivory/40">Ace AI Command Layer</span>
                 </div>
                 <span className="rounded-full border border-gold/30 px-3 py-1 font-[var(--font-inter)] text-[9px] uppercase tracking-[0.2em] text-gold/70">System Active</span>
@@ -443,7 +443,7 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ HOW IT WORKS ═══════════════════ */}
-      <section className="relative bg-[#0e1014]">
+      <section className="relative bg-[#0E1830]">
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <FadeSection id="how-label">
           <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">Process</p>
@@ -471,7 +471,7 @@ export default function Home() {
 
       {/* ═══════════════════ CINEMATIC STATEMENT ═══════════════════ */}
       <section className="relative overflow-hidden py-32 md:py-44">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(184,153,111,0.06)_0%,rgba(11,12,16,0)_70%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.06)_0%,rgba(10,17,40,0)_70%)]" />
         <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
         <FadeSection id="statement">
@@ -488,7 +488,7 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ THE DIFFERENCE ═══════════════════ */}
-      <section id="difference" className="relative bg-[#0e1014]">
+      <section id="difference" className="relative bg-[#0E1830]">
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <div className="grid items-start gap-16 lg:grid-cols-2">
           <div>
@@ -562,7 +562,7 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ CONTACT ═══════════════════ */}
-      <section id="contact" className="relative bg-[#0e1014]">
+      <section id="contact" className="relative bg-[#0E1830]">
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <div className="grid gap-16 lg:grid-cols-2">
           <div>
@@ -601,7 +601,7 @@ export default function Home() {
       {/* ═══════════════════ CLOSING BRAND BAR ═══════════════════ */}
       <section className="relative overflow-hidden py-20 md:py-28">
         <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(184,153,111,0.04)_0%,rgba(11,12,16,0)_70%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.04)_0%,rgba(10,17,40,0)_70%)]" />
         <FadeSection id="closing">
           <div className="mx-auto flex max-w-4xl flex-col items-center px-6 text-center md:px-10">
             <p className="font-[var(--font-cinzel)] text-[11px] uppercase tracking-[0.3em] text-gold/60">Revelation Inc. AI</p>
@@ -611,7 +611,7 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ FOOTER ═══════════════════ */}
-      <footer className="border-t border-gold/15 bg-[#08090d]">
+      <footer className="border-t border-gold/15 bg-[#071020]">
         <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-6 py-20 md:flex-row md:items-start md:justify-between md:px-10">
           <div className="max-w-sm">
             <p className="font-[var(--font-cinzel)] text-sm uppercase tracking-[0.25em] text-gold">Revelation Inc. AI</p>
