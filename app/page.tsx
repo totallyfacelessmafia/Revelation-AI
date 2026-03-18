@@ -302,16 +302,16 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ PROBLEM ═══════════════════ */}
-      <section id="problem" className="relative bg-[#0E1830]">
+      <section id="problem" className="relative bg-white">
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <FadeSection id="problem-label">
-            <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">The Problem</p>
+            <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold">The Problem</p>
           </FadeSection>
           <FadeSection id="problem-heading" delay={100}>
-            <h2 className="mt-5 max-w-4xl font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-ivory sm:text-4xl md:text-5xl">
+            <h2 className="mt-5 max-w-4xl font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-obsidian sm:text-4xl md:text-5xl">
               AI Was Supposed to Make Things <span className="text-gold">Simpler.</span>
             </h2>
-            <p className="mt-6 max-w-2xl font-[var(--font-inter)] text-base leading-relaxed text-ivory/55 md:text-lg">
+            <p className="mt-6 max-w-2xl font-[var(--font-inter)] text-base leading-relaxed text-obsidian/60 md:text-lg">
               Instead, it created a new category of work. More tools to manage. More platforms to learn. More content that doesn&apos;t sound like you.
             </p>
           </FadeSection>
@@ -319,17 +319,17 @@ export default function Home() {
           <div className="mt-16 grid gap-6 md:grid-cols-3">
             {painPoints.map((point, i) => (
               <FadeSection key={point.number} id={`pain-${point.number}`} delay={i * 150}>
-                <article className="group relative h-full overflow-hidden rounded-lg border border-white/[0.06] bg-white/[0.02] p-8 transition-all duration-500 hover:border-red-500/20 hover:bg-white/[0.04]">
+                <article className="group relative h-full overflow-hidden rounded-lg border border-obsidian/[0.08] bg-[#F8FAFC] p-8 transition-all duration-500 hover:border-red-500/30 hover:shadow-lg">
                   <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-red-400/0 to-transparent transition-all duration-500 group-hover:via-red-400/30" />
-                  <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-md border border-white/[0.08] bg-white/[0.03] text-ivory/40 transition-colors group-hover:border-red-500/20 group-hover:text-red-400/60">
+                  <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-md border border-obsidian/10 bg-obsidian/[0.04] text-obsidian/40 transition-colors group-hover:border-red-500/20 group-hover:text-red-500/60">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-5 w-5">
                       <path d={point.iconPath} />
                       {point.iconCircle && <circle cx="12" cy="12" r="10" />}
                     </svg>
                   </div>
-                  <span className="font-[var(--font-inter)] text-[11px] tracking-[0.2em] text-gold/40">{point.number}</span>
-                  <h3 className="mt-3 font-[var(--font-cinzel)] text-lg uppercase tracking-[0.08em] text-ivory/90">{point.title}</h3>
-                  <p className="mt-4 font-[var(--font-inter)] text-sm leading-relaxed text-ivory/50">{point.copy}</p>
+                  <span className="font-[var(--font-inter)] text-[11px] tracking-[0.2em] text-gold">{point.number}</span>
+                  <h3 className="mt-3 font-[var(--font-cinzel)] text-lg uppercase tracking-[0.08em] text-obsidian">{point.title}</h3>
+                  <p className="mt-4 font-[var(--font-inter)] text-sm leading-relaxed text-obsidian/55">{point.copy}</p>
                 </article>
               </FadeSection>
             ))}
@@ -440,28 +440,28 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ HOW IT WORKS ═══════════════════ */}
-      <section className="relative bg-[#0E1830]">
+      <section className="relative bg-white">
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
-        <FadeSection id="how-label">
-          <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">Process</p>
-        </FadeSection>
-        <FadeSection id="how-heading" delay={100}>
-          <h2 className="mt-5 max-w-4xl font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-ivory sm:text-4xl md:text-5xl">
-            Three Steps. <span className="text-gold">Zero Complexity.</span>
-          </h2>
-        </FadeSection>
+          <FadeSection id="how-label">
+            <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold">Process</p>
+          </FadeSection>
+          <FadeSection id="how-heading" delay={100}>
+            <h2 className="mt-5 max-w-4xl font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-obsidian sm:text-4xl md:text-5xl">
+              Three Steps. <span className="text-gold">Zero Complexity.</span>
+            </h2>
+          </FadeSection>
 
-        <div className="mt-16 grid gap-0 md:grid-cols-3">
-          {steps.map((step, i) => (
-            <FadeSection key={step.number} id={`step-${step.number}`} delay={i * 200}>
-              <div className="relative border-l border-white/[0.06] py-2 pl-8 md:border-l-0 md:border-t md:pb-0 md:pl-0 md:pt-8">
-                <div className="absolute left-0 top-0 h-full w-[1px] bg-gradient-to-b from-gold/40 to-transparent md:h-[1px] md:w-full md:bg-gradient-to-r" />
-                <span className="font-[var(--font-inter)] text-[40px] font-light leading-none text-white/[0.06] md:text-[56px]">{step.number}</span>
-                <h3 className="mt-2 font-[var(--font-cinzel)] text-xl uppercase tracking-[0.1em] text-gold">{step.title}</h3>
-                <p className="mt-4 max-w-sm font-[var(--font-inter)] text-sm leading-relaxed text-ivory/50 md:pr-8">{step.copy}</p>
-              </div>
-            </FadeSection>
-          ))}
+          <div className="mt-16 grid gap-0 md:grid-cols-3">
+            {steps.map((step, i) => (
+              <FadeSection key={step.number} id={`step-${step.number}`} delay={i * 200}>
+                <div className="relative border-l border-obsidian/[0.08] py-2 pl-8 md:border-l-0 md:border-t md:pb-0 md:pl-0 md:pt-8">
+                  <div className="absolute left-0 top-0 h-full w-[1px] bg-gradient-to-b from-gold/60 to-transparent md:h-[1px] md:w-full md:bg-gradient-to-r" />
+                  <span className="font-[var(--font-inter)] text-[40px] font-light leading-none text-obsidian/[0.06] md:text-[56px]">{step.number}</span>
+                  <h3 className="mt-2 font-[var(--font-cinzel)] text-xl uppercase tracking-[0.1em] text-gold">{step.title}</h3>
+                  <p className="mt-4 max-w-sm font-[var(--font-inter)] text-sm leading-relaxed text-obsidian/55 md:pr-8">{step.copy}</p>
+                </div>
+              </FadeSection>
+            ))}
           </div>
         </div>
       </section>
@@ -485,44 +485,44 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ THE DIFFERENCE ═══════════════════ */}
-      <section id="difference" className="relative bg-[#0E1830]">
+      <section id="difference" className="relative bg-white">
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
-        <div className="grid items-start gap-16 lg:grid-cols-2">
-          <div>
-            <FadeSection id="diff-label">
-              <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">Why Revelation</p>
-            </FadeSection>
-            <FadeSection id="diff-heading" delay={100}>
-              <h2 className="mt-5 font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-ivory sm:text-4xl md:text-5xl">
-                Built by Marketers. <span className="text-gold">Not Technologists.</span>
-              </h2>
-            </FadeSection>
-            <FadeSection id="diff-body" delay={200}>
-              <p className="mt-8 font-[var(--font-inter)] text-base leading-relaxed text-ivory/55 md:text-lg md:leading-relaxed">
-                Most AI companies are built by engineers who understand models but not markets. We spent decades in the room with executives — learning what they need, what they ignore, and what actually moves the needle.
-              </p>
-              <p className="mt-6 font-[var(--font-inter)] text-base leading-relaxed text-ivory/55 md:text-lg md:leading-relaxed">
-                That&apos;s why our software doesn&apos;t ask you to become a power user. It asks you one question: <em className="text-gold/80">what result do you need?</em> Then it delivers.
-              </p>
+          <div className="grid items-start gap-16 lg:grid-cols-2">
+            <div>
+              <FadeSection id="diff-label">
+                <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold">Why Revelation</p>
+              </FadeSection>
+              <FadeSection id="diff-heading" delay={100}>
+                <h2 className="mt-5 font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-obsidian sm:text-4xl md:text-5xl">
+                  Built by Marketers. <span className="text-gold">Not Technologists.</span>
+                </h2>
+              </FadeSection>
+              <FadeSection id="diff-body" delay={200}>
+                <p className="mt-8 font-[var(--font-inter)] text-base leading-relaxed text-obsidian/60 md:text-lg md:leading-relaxed">
+                  Most AI companies are built by engineers who understand models but not markets. We spent decades in the room with executives — learning what they need, what they ignore, and what actually moves the needle.
+                </p>
+                <p className="mt-6 font-[var(--font-inter)] text-base leading-relaxed text-obsidian/60 md:text-lg md:leading-relaxed">
+                  That&apos;s why our software doesn&apos;t ask you to become a power user. It asks you one question: <em className="text-gold">what result do you need?</em> Then it delivers.
+                </p>
+              </FadeSection>
+            </div>
+
+            <FadeSection id="diff-values" delay={300}>
+              <div className="space-y-6 lg:mt-16">
+                {[
+                  { title: "Results Over Features", copy: "We don't sell capabilities. We sell outcomes. If it doesn't move a metric that matters to you, we don't build it." },
+                  { title: "Invisible Complexity", copy: "The sophistication is in the system, not the interface. What's simple for you is engineered to be simple." },
+                  { title: "Executive-Grade Privacy", copy: "Your data, your likeness, your voice — held to the same standard as the boardroom. No shared models. No public training." },
+                ].map((value) => (
+                  <div key={value.title} className="group relative overflow-hidden rounded-lg border border-obsidian/[0.08] bg-[#F8FAFC] p-6 transition-all duration-500 hover:border-gold/40 hover:shadow-md">
+                    <div className="absolute bottom-0 left-0 top-0 w-[2px] bg-gradient-to-b from-gold/50 via-gold/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                    <h3 className="font-[var(--font-cinzel)] text-sm uppercase tracking-[0.12em] text-gold">{value.title}</h3>
+                    <p className="mt-3 font-[var(--font-inter)] text-sm leading-relaxed text-obsidian/55">{value.copy}</p>
+                  </div>
+                ))}
+              </div>
             </FadeSection>
           </div>
-
-          <FadeSection id="diff-values" delay={300}>
-            <div className="space-y-6 lg:mt-16">
-              {[
-                { title: "Results Over Features", copy: "We don't sell capabilities. We sell outcomes. If it doesn't move a metric that matters to you, we don't build it." },
-                { title: "Invisible Complexity", copy: "The sophistication is in the system, not the interface. What's simple for you is engineered to be simple." },
-                { title: "Executive-Grade Privacy", copy: "Your data, your likeness, your voice — held to the same standard as the boardroom. No shared models. No public training." },
-              ].map((value) => (
-                <div key={value.title} className="group relative overflow-hidden rounded-lg border border-white/[0.06] bg-white/[0.02] p-6 transition-all duration-500 hover:border-gold/20">
-                  <div className="absolute bottom-0 left-0 top-0 w-[2px] bg-gradient-to-b from-gold/30 via-gold/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                  <h3 className="font-[var(--font-cinzel)] text-sm uppercase tracking-[0.12em] text-gold/90">{value.title}</h3>
-                  <p className="mt-3 font-[var(--font-inter)] text-sm leading-relaxed text-ivory/50">{value.copy}</p>
-                </div>
-              ))}
-            </div>
-          </FadeSection>
-        </div>
         </div>
       </section>
 
@@ -559,39 +559,39 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ CONTACT ═══════════════════ */}
-      <section id="contact" className="relative bg-[#0E1830]">
+      <section id="contact" className="relative bg-white">
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
-        <div className="grid gap-16 lg:grid-cols-2">
-          <div>
-            <FadeSection id="contact-label">
-              <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">Begin</p>
-            </FadeSection>
-            <FadeSection id="contact-heading" delay={100}>
-              <h2 className="mt-5 font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-ivory sm:text-4xl md:text-5xl">
-                Request a <span className="text-gold">Revelation.</span>
-              </h2>
-              <p className="mt-6 font-[var(--font-inter)] text-base leading-relaxed text-ivory/50 md:text-lg">
-                Every engagement begins with a confidential briefing. Tell us what you need — we&apos;ll tell you exactly what we can build.
-              </p>
-            </FadeSection>
-            <FadeSection id="contact-details" delay={200}>
-              <div className="mt-10 space-y-4">
-                {["Response within 24 hours", "NDA available upon request", "No obligation. No sales pitch."].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="h-[1px] w-4 bg-gold/40" />
-                    <span className="font-[var(--font-inter)] text-sm text-ivory/40">{item}</span>
-                  </div>
-                ))}
+          <div className="grid gap-16 lg:grid-cols-2">
+            <div>
+              <FadeSection id="contact-label">
+                <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold">Begin</p>
+              </FadeSection>
+              <FadeSection id="contact-heading" delay={100}>
+                <h2 className="mt-5 font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-obsidian sm:text-4xl md:text-5xl">
+                  Request a <span className="text-gold">Revelation.</span>
+                </h2>
+                <p className="mt-6 font-[var(--font-inter)] text-base leading-relaxed text-obsidian/60 md:text-lg">
+                  Every engagement begins with a confidential briefing. Tell us what you need — we&apos;ll tell you exactly what we can build.
+                </p>
+              </FadeSection>
+              <FadeSection id="contact-details" delay={200}>
+                <div className="mt-10 space-y-4">
+                  {["Response within 24 hours", "NDA available upon request", "No obligation. No sales pitch."].map((item) => (
+                    <div key={item} className="flex items-center gap-3">
+                      <div className="h-[1px] w-4 bg-gold/60" />
+                      <span className="font-[var(--font-inter)] text-sm text-obsidian/50">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </FadeSection>
+            </div>
+
+            <FadeSection id="contact-form" delay={200}>
+              <div className="rounded-xl border border-obsidian/[0.08] bg-[#F8FAFC] p-8 md:p-10">
+                <ContactForm />
               </div>
             </FadeSection>
           </div>
-
-          <FadeSection id="contact-form" delay={200}>
-            <div className="rounded-xl border border-white/[0.08] bg-white/[0.02] p-8 md:p-10">
-              <ContactForm />
-            </div>
-          </FadeSection>
-        </div>
         </div>
       </section>
 
