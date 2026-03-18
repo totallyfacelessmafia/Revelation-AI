@@ -609,49 +609,53 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ FOOTER ═══════════════════ */}
-      <footer className="border-t border-white/[0.06]">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-6 py-16 md:flex-row md:items-start md:justify-between md:px-10">
-          <div className="max-w-xs">
-            <p className="font-[var(--font-cinzel)] text-[11px] uppercase tracking-[0.25em] text-gold/80">Revelation Inc. AI</p>
-            <p className="mt-3 font-[var(--font-inter)] text-xs leading-relaxed text-ivory/30">
+      <footer className="border-t border-gold/15 bg-[#08090d]">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-6 py-20 md:flex-row md:items-start md:justify-between md:px-10">
+          <div className="max-w-sm">
+            <p className="font-[var(--font-cinzel)] text-sm uppercase tracking-[0.25em] text-gold">Revelation Inc. AI</p>
+            <p className="mt-4 font-[var(--font-inter)] text-sm leading-relaxed text-ivory/60">
               Bespoke AI systems for enterprises that demand results, not features.
             </p>
-            <div className="mt-6 space-y-2">
-              <a href="mailto:info@revelationinc.ai" className="block font-[var(--font-inter)] text-xs text-ivory/40 transition-colors hover:text-gold">info@revelationinc.ai</a>
-              <p className="font-[var(--font-inter)] text-xs text-ivory/25">Newport Beach, California</p>
+            <div className="mt-8 space-y-3">
+              <a href="mailto:info@revelationinc.ai" className="block font-[var(--font-inter)] text-sm text-ivory/70 transition-colors hover:text-gold">
+                info@revelationinc.ai
+              </a>
+              <p className="font-[var(--font-inter)] text-sm text-ivory/50">
+                Newport Beach, California
+              </p>
             </div>
           </div>
 
-          <div className="flex gap-16">
+          <div className="flex gap-16 md:gap-20">
             <div>
-              <p className="font-[var(--font-inter)] text-[10px] uppercase tracking-[0.2em] text-ivory/30">Navigation</p>
-              <nav className="mt-4 flex flex-col gap-3">
+              <p className="font-[var(--font-inter)] text-[11px] uppercase tracking-[0.2em] text-gold/70">Navigation</p>
+              <nav className="mt-5 flex flex-col gap-3">
                 {navItems.map((item) => (
-                  <a key={item.href} href={item.href} className="font-[var(--font-inter)] text-xs text-ivory/40 transition-colors hover:text-gold">{item.label}</a>
+                  <a key={item.href} href={item.href} className="font-[var(--font-inter)] text-sm text-ivory/60 transition-colors hover:text-gold">{item.label}</a>
                 ))}
               </nav>
             </div>
             <div>
-              <p className="font-[var(--font-inter)] text-[10px] uppercase tracking-[0.2em] text-ivory/30">Connect</p>
-              <div className="mt-4 flex flex-col gap-3">
-                <a href="mailto:info@revelationinc.ai" className="font-[var(--font-inter)] text-xs text-ivory/40 transition-colors hover:text-gold">Email</a>
-                <span className="font-[var(--font-inter)] text-xs text-ivory/40">LinkedIn</span>
-                <span className="font-[var(--font-inter)] text-xs text-ivory/40">X / Twitter</span>
+              <p className="font-[var(--font-inter)] text-[11px] uppercase tracking-[0.2em] text-gold/70">Connect</p>
+              <div className="mt-5 flex flex-col gap-3">
+                <a href="mailto:info@revelationinc.ai" className="font-[var(--font-inter)] text-sm text-ivory/60 transition-colors hover:text-gold">Email</a>
+                <span className="font-[var(--font-inter)] text-sm text-ivory/60">LinkedIn</span>
+                <span className="font-[var(--font-inter)] text-sm text-ivory/60">X / Twitter</span>
               </div>
             </div>
             <div>
-              <p className="font-[var(--font-inter)] text-[10px] uppercase tracking-[0.2em] text-ivory/30">Legal</p>
-              <div className="mt-4 flex flex-col gap-3">
-                <span className="font-[var(--font-inter)] text-xs text-ivory/40">Privacy Policy</span>
-                <span className="font-[var(--font-inter)] text-xs text-ivory/40">Terms of Service</span>
+              <p className="font-[var(--font-inter)] text-[11px] uppercase tracking-[0.2em] text-gold/70">Legal</p>
+              <div className="mt-5 flex flex-col gap-3">
+                <span className="font-[var(--font-inter)] text-sm text-ivory/60">Privacy Policy</span>
+                <span className="font-[var(--font-inter)] text-sm text-ivory/60">Terms of Service</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-white/[0.04]">
+        <div className="border-t border-gold/10">
           <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-6 md:px-10">
-            <p className="font-[var(--font-inter)] text-[10px] text-ivory/20">&copy; 2026 Revelation Inc. AI. All rights reserved.</p>
+            <p className="font-[var(--font-inter)] text-xs text-ivory/40">&copy; 2026 Revelation Inc. AI. All rights reserved.</p>
           </div>
         </div>
       </footer>
