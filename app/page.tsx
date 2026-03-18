@@ -351,6 +351,17 @@ export default function Home() {
                   See Ace AI
                   <span className="text-gold/60">&#8594;</span>
                 </a>
+                <a
+                  href="https://getmyace.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-2 py-4 font-[var(--font-inter)] text-sm uppercase tracking-[0.14em] text-ivory/50 transition-colors hover:text-gold"
+                >
+                  Get Started
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-3.5 w-3.5 text-gold/60">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </a>
               </div>
             </FadeSection>
           </div>
@@ -549,6 +560,26 @@ export default function Home() {
             </FadeSection>
           ))}
         </div>
+
+        {/* Ace CTA */}
+        <FadeSection id="ace-cta" delay={300}>
+          <div className="mt-14 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <a
+              href="https://getmyace.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-3 rounded-sm border border-gold/60 bg-gold/10 px-10 py-4 font-[var(--font-inter)] text-sm uppercase tracking-[0.14em] text-gold transition-all duration-300 hover:border-gold hover:bg-gold hover:text-obsidian"
+            >
+              Explore Ace AI
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4 w-4">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+              </svg>
+            </a>
+            <span className="font-[var(--font-inter)] text-[11px] text-ivory/30">
+              getmyace.com
+            </span>
+          </div>
+        </FadeSection>
       </section>
 
       {/* ─── Divider ─── */}
