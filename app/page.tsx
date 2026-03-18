@@ -302,7 +302,11 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ PROBLEM ═══════════════════ */}
-      <section id="problem" className="relative bg-white">
+      <section id="problem" className="relative overflow-hidden bg-[#F8FAFC]">
+        {/* Texture: subtle dot pattern */}
+        <div className="pointer-events-none absolute inset-0 opacity-[0.4]" style={{ backgroundImage: "radial-gradient(circle, #0A1128 0.5px, transparent 0.5px)", backgroundSize: "24px 24px" }} />
+        {/* Depth: floating warm orb */}
+        <div className="animate-float-slower pointer-events-none absolute -right-20 top-1/4 h-[500px] w-[500px] rounded-full bg-gold/[0.04] blur-[120px]" />
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <FadeSection id="problem-label">
             <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold">The Problem</p>
@@ -311,7 +315,7 @@ export default function Home() {
             <h2 className="mt-5 max-w-4xl font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-obsidian sm:text-4xl md:text-5xl">
               AI Was Supposed to Make Things <span className="text-gold">Simpler.</span>
             </h2>
-            <p className="mt-6 max-w-2xl font-[var(--font-inter)] text-base leading-relaxed text-obsidian/60 md:text-lg">
+            <p className="mt-6 max-w-2xl font-[var(--font-inter)] text-base leading-relaxed text-obsidian/75 md:text-lg">
               Instead, it created a new category of work. More tools to manage. More platforms to learn. More content that doesn&apos;t sound like you.
             </p>
           </FadeSection>
@@ -329,7 +333,7 @@ export default function Home() {
                   </div>
                   <span className="font-[var(--font-inter)] text-[11px] tracking-[0.2em] text-gold">{point.number}</span>
                   <h3 className="mt-3 font-[var(--font-cinzel)] text-lg uppercase tracking-[0.08em] text-obsidian">{point.title}</h3>
-                  <p className="mt-4 font-[var(--font-inter)] text-sm leading-relaxed text-obsidian/55">{point.copy}</p>
+                  <p className="mt-4 font-[var(--font-inter)] text-sm leading-relaxed text-obsidian/75">{point.copy}</p>
                 </article>
               </FadeSection>
             ))}
@@ -440,7 +444,9 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ HOW IT WORKS ═══════════════════ */}
-      <section className="relative bg-white">
+      <section className="relative overflow-hidden bg-[#F8FAFC]">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.4]" style={{ backgroundImage: "radial-gradient(circle, #0A1128 0.5px, transparent 0.5px)", backgroundSize: "24px 24px" }} />
+        <div className="animate-float-slow pointer-events-none absolute -left-32 bottom-1/4 h-[400px] w-[400px] rounded-full bg-gold/[0.05] blur-[100px]" />
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <FadeSection id="how-label">
             <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold">Process</p>
@@ -458,7 +464,7 @@ export default function Home() {
                   <div className="absolute left-0 top-0 h-full w-[1px] bg-gradient-to-b from-gold/60 to-transparent md:h-[1px] md:w-full md:bg-gradient-to-r" />
                   <span className="font-[var(--font-inter)] text-[40px] font-light leading-none text-obsidian/[0.06] md:text-[56px]">{step.number}</span>
                   <h3 className="mt-2 font-[var(--font-cinzel)] text-xl uppercase tracking-[0.1em] text-gold">{step.title}</h3>
-                  <p className="mt-4 max-w-sm font-[var(--font-inter)] text-sm leading-relaxed text-obsidian/55 md:pr-8">{step.copy}</p>
+                  <p className="mt-4 max-w-sm font-[var(--font-inter)] text-sm leading-relaxed text-obsidian/75 md:pr-8">{step.copy}</p>
                 </div>
               </FadeSection>
             ))}
@@ -485,7 +491,9 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ THE DIFFERENCE ═══════════════════ */}
-      <section id="difference" className="relative bg-white">
+      <section id="difference" className="relative overflow-hidden bg-[#F8FAFC]">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.4]" style={{ backgroundImage: "radial-gradient(circle, #0A1128 0.5px, transparent 0.5px)", backgroundSize: "24px 24px" }} />
+        <div className="animate-float-slower pointer-events-none absolute -right-16 top-1/3 h-[450px] w-[450px] rounded-full bg-obsidian/[0.02] blur-[100px]" />
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <div className="grid items-start gap-16 lg:grid-cols-2">
             <div>
@@ -498,10 +506,10 @@ export default function Home() {
                 </h2>
               </FadeSection>
               <FadeSection id="diff-body" delay={200}>
-                <p className="mt-8 font-[var(--font-inter)] text-base leading-relaxed text-obsidian/60 md:text-lg md:leading-relaxed">
+                <p className="mt-8 font-[var(--font-inter)] text-base leading-relaxed text-obsidian/75 md:text-lg md:leading-relaxed">
                   Most AI companies are built by engineers who understand models but not markets. We spent decades in the room with executives — learning what they need, what they ignore, and what actually moves the needle.
                 </p>
-                <p className="mt-6 font-[var(--font-inter)] text-base leading-relaxed text-obsidian/60 md:text-lg md:leading-relaxed">
+                <p className="mt-6 font-[var(--font-inter)] text-base leading-relaxed text-obsidian/75 md:text-lg md:leading-relaxed">
                   That&apos;s why our software doesn&apos;t ask you to become a power user. It asks you one question: <em className="text-gold">what result do you need?</em> Then it delivers.
                 </p>
               </FadeSection>
@@ -517,7 +525,7 @@ export default function Home() {
                   <div key={value.title} className="group relative overflow-hidden rounded-lg border border-obsidian/[0.08] bg-[#F8FAFC] p-6 transition-all duration-500 hover:border-gold/40 hover:shadow-md">
                     <div className="absolute bottom-0 left-0 top-0 w-[2px] bg-gradient-to-b from-gold/50 via-gold/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                     <h3 className="font-[var(--font-cinzel)] text-sm uppercase tracking-[0.12em] text-gold">{value.title}</h3>
-                    <p className="mt-3 font-[var(--font-inter)] text-sm leading-relaxed text-obsidian/55">{value.copy}</p>
+                    <p className="mt-3 font-[var(--font-inter)] text-sm leading-relaxed text-obsidian/75">{value.copy}</p>
                   </div>
                 ))}
               </div>
@@ -559,7 +567,9 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ CONTACT ═══════════════════ */}
-      <section id="contact" className="relative bg-white">
+      <section id="contact" className="relative overflow-hidden bg-[#F8FAFC]">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.4]" style={{ backgroundImage: "radial-gradient(circle, #0A1128 0.5px, transparent 0.5px)", backgroundSize: "24px 24px" }} />
+        <div className="animate-float-slow pointer-events-none absolute -left-20 top-1/2 h-[400px] w-[400px] rounded-full bg-gold/[0.04] blur-[120px]" />
         <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <div className="grid gap-16 lg:grid-cols-2">
             <div>
@@ -570,7 +580,7 @@ export default function Home() {
                 <h2 className="mt-5 font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-obsidian sm:text-4xl md:text-5xl">
                   Request a <span className="text-gold">Revelation.</span>
                 </h2>
-                <p className="mt-6 font-[var(--font-inter)] text-base leading-relaxed text-obsidian/60 md:text-lg">
+                <p className="mt-6 font-[var(--font-inter)] text-base leading-relaxed text-obsidian/75 md:text-lg">
                   Every engagement begins with a confidential briefing. Tell us what you need — we&apos;ll tell you exactly what we can build.
                 </p>
               </FadeSection>
@@ -579,7 +589,7 @@ export default function Home() {
                   {["Response within 24 hours", "NDA available upon request", "No obligation. No sales pitch."].map((item) => (
                     <div key={item} className="flex items-center gap-3">
                       <div className="h-[1px] w-4 bg-gold/60" />
-                      <span className="font-[var(--font-inter)] text-sm text-obsidian/50">{item}</span>
+                      <span className="font-[var(--font-inter)] text-sm text-obsidian/70">{item}</span>
                     </div>
                   ))}
                 </div>

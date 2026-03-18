@@ -27,7 +27,7 @@ export default function ContactForm() {
         <h3 className="font-[var(--font-cinzel)] text-lg uppercase tracking-[0.1em] text-gold">
           Inquiry Received
         </h3>
-        <p className="mt-3 font-[var(--font-inter)] text-sm text-obsidian/50">
+        <p className="mt-3 font-[var(--font-inter)] text-sm text-obsidian/70">
           We&apos;ll be in touch within 24 hours.
         </p>
       </div>
@@ -38,7 +38,7 @@ export default function ContactForm() {
     <form onSubmit={onSubmit} className="space-y-5">
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <label className="mb-2 block font-[var(--font-inter)] text-[10px] uppercase tracking-[0.18em] text-obsidian/45">
+          <label className="mb-2 block font-[var(--font-inter)] text-[10px] uppercase tracking-[0.18em] text-obsidian/65">
             Full Name
           </label>
           <input
@@ -49,7 +49,7 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label className="mb-2 block font-[var(--font-inter)] text-[10px] uppercase tracking-[0.18em] text-obsidian/45">
+          <label className="mb-2 block font-[var(--font-inter)] text-[10px] uppercase tracking-[0.18em] text-obsidian/65">
             Email
           </label>
           <input
@@ -61,7 +61,7 @@ export default function ContactForm() {
         </div>
       </div>
       <div>
-        <label className="mb-2 block font-[var(--font-inter)] text-[10px] uppercase tracking-[0.18em] text-obsidian/45">
+        <label className="mb-2 block font-[var(--font-inter)] text-[10px] uppercase tracking-[0.18em] text-obsidian/65">
           Company
         </label>
         <input
@@ -71,7 +71,7 @@ export default function ContactForm() {
         />
       </div>
       <div>
-        <label className="mb-2 block font-[var(--font-inter)] text-[10px] uppercase tracking-[0.18em] text-obsidian/45">
+        <label className="mb-2 block font-[var(--font-inter)] text-[10px] uppercase tracking-[0.18em] text-obsidian/65">
           What do you need?
         </label>
         <textarea
