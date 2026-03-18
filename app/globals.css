@@ -25,15 +25,9 @@ h2,
 h3,
 .gold-display {
   font-family: var(--font-cinzel), serif;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
 }
 
-.glass-card {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.02));
-  backdrop-filter: blur(18px);
-}
-
+/* ─── Gold foil shimmer on logo ─── */
 .gold-foil-shimmer {
   pointer-events: none;
   position: absolute;
@@ -47,10 +41,35 @@ h3,
     rgba(255, 255, 255, 0) 100%
   );
   transform: translateX(-140%) skewX(-18deg);
-  animation: foilSweep 5s ease-in-out infinite;
+  animation: foilSweep 6s ease-in-out infinite;
   mix-blend-mode: screen;
 }
 
+/* ─── Selection styling ─── */
+::selection {
+  background: rgba(197, 160, 89, 0.3);
+  color: var(--ivory);
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--obsidian);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 89, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 160, 89, 0.4);
+}
+
+/* ─── Reduced motion ─── */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 1ms !important;
