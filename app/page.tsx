@@ -869,13 +869,13 @@ export default function Home() {
             </p>
             <div className="mt-6 space-y-2">
               <a
-                href="mailto:inquiries@revelationinc.ai"
+                href="mailto:info@revelationinc.ai"
                 className="block font-[var(--font-inter)] text-xs text-ivory/40 transition-colors hover:text-gold"
               >
-                inquiries@revelationinc.ai
+                info@revelationinc.ai
               </a>
               <p className="font-[var(--font-inter)] text-xs text-ivory/25">
-                Miami, FL
+                Newport Beach, California
               </p>
             </div>
           </div>
@@ -903,7 +903,7 @@ export default function Home() {
               </p>
               <div className="mt-4 flex flex-col gap-3">
                 <a
-                  href="mailto:inquiries@revelationinc.ai"
+                  href="mailto:info@revelationinc.ai"
                   className="font-[var(--font-inter)] text-xs text-ivory/40 transition-colors hover:text-gold"
                 >
                   Email
