@@ -215,9 +215,6 @@ export default function Home() {
         <div className="grid items-center gap-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
             <FadeSection id="hero-fade">
-              <p className="mb-6 font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">
-                Revelation Inc. AI
-              </p>
               <h1 className="max-w-5xl font-[var(--font-cinzel)] text-4xl uppercase leading-[1.15] tracking-[0.12em] text-ivory sm:text-5xl md:text-7xl lg:text-8xl">
                 Your Executives Have{" "}
                 <span className="text-gold">Better Things</span> To Do.
