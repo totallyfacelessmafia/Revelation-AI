@@ -304,46 +304,45 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="mx-auto h-[1px] max-w-7xl bg-gradient-to-r from-transparent via-gold/25 to-transparent" />
-
       {/* ═══════════════════ PROBLEM ═══════════════════ */}
-      <section id="problem" className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
-        <FadeSection id="problem-label">
-          <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">The Problem</p>
-        </FadeSection>
-        <FadeSection id="problem-heading" delay={100}>
-          <h2 className="mt-5 max-w-4xl font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-ivory sm:text-4xl md:text-5xl">
-            AI Was Supposed to Make Things <span className="text-gold">Simpler.</span>
-          </h2>
-          <p className="mt-6 max-w-2xl font-[var(--font-inter)] text-base leading-relaxed text-ivory/55 md:text-lg">
-            Instead, it created a new category of work. More tools to manage. More platforms to learn. More content that doesn&apos;t sound like you.
-          </p>
-        </FadeSection>
+      <section id="problem" className="relative bg-[#0e1014]">
+        <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
+          <FadeSection id="problem-label">
+            <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">The Problem</p>
+          </FadeSection>
+          <FadeSection id="problem-heading" delay={100}>
+            <h2 className="mt-5 max-w-4xl font-[var(--font-cinzel)] text-3xl uppercase tracking-[0.1em] text-ivory sm:text-4xl md:text-5xl">
+              AI Was Supposed to Make Things <span className="text-gold">Simpler.</span>
+            </h2>
+            <p className="mt-6 max-w-2xl font-[var(--font-inter)] text-base leading-relaxed text-ivory/55 md:text-lg">
+              Instead, it created a new category of work. More tools to manage. More platforms to learn. More content that doesn&apos;t sound like you.
+            </p>
+          </FadeSection>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3">
-          {painPoints.map((point, i) => (
-            <FadeSection key={point.number} id={`pain-${point.number}`} delay={i * 150}>
-              <article className="group relative h-full overflow-hidden rounded-lg border border-white/[0.06] bg-white/[0.02] p-8 transition-all duration-500 hover:border-red-500/20 hover:bg-white/[0.04]">
-                <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-red-400/0 to-transparent transition-all duration-500 group-hover:via-red-400/30" />
-                <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-md border border-white/[0.08] bg-white/[0.03] text-ivory/40 transition-colors group-hover:border-red-500/20 group-hover:text-red-400/60">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-5 w-5">
-                    <path d={point.iconPath} />
-                    {point.iconCircle && <circle cx="12" cy="12" r="10" />}
-                  </svg>
-                </div>
-                <span className="font-[var(--font-inter)] text-[11px] tracking-[0.2em] text-gold/40">{point.number}</span>
-                <h3 className="mt-3 font-[var(--font-cinzel)] text-lg uppercase tracking-[0.08em] text-ivory/90">{point.title}</h3>
-                <p className="mt-4 font-[var(--font-inter)] text-sm leading-relaxed text-ivory/50">{point.copy}</p>
-              </article>
-            </FadeSection>
-          ))}
+          <div className="mt-16 grid gap-6 md:grid-cols-3">
+            {painPoints.map((point, i) => (
+              <FadeSection key={point.number} id={`pain-${point.number}`} delay={i * 150}>
+                <article className="group relative h-full overflow-hidden rounded-lg border border-white/[0.06] bg-white/[0.02] p-8 transition-all duration-500 hover:border-red-500/20 hover:bg-white/[0.04]">
+                  <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-red-400/0 to-transparent transition-all duration-500 group-hover:via-red-400/30" />
+                  <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-md border border-white/[0.08] bg-white/[0.03] text-ivory/40 transition-colors group-hover:border-red-500/20 group-hover:text-red-400/60">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-5 w-5">
+                      <path d={point.iconPath} />
+                      {point.iconCircle && <circle cx="12" cy="12" r="10" />}
+                    </svg>
+                  </div>
+                  <span className="font-[var(--font-inter)] text-[11px] tracking-[0.2em] text-gold/40">{point.number}</span>
+                  <h3 className="mt-3 font-[var(--font-cinzel)] text-lg uppercase tracking-[0.08em] text-ivory/90">{point.title}</h3>
+                  <p className="mt-4 font-[var(--font-inter)] text-sm leading-relaxed text-ivory/50">{point.copy}</p>
+                </article>
+              </FadeSection>
+            ))}
+          </div>
         </div>
       </section>
 
-      <div className="mx-auto h-[1px] max-w-7xl bg-gradient-to-r from-transparent via-gold/25 to-transparent" />
-
       {/* ═══════════════════ ACE AI ═══════════════════ */}
-      <section id="ace" className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
+      <section id="ace">
+        <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <FadeSection id="ace-label">
           <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">Flagship Product</p>
         </FadeSection>
@@ -440,12 +439,12 @@ export default function Home() {
             <span className="font-[var(--font-inter)] text-[11px] text-ivory/30">getmyace.com</span>
           </div>
         </FadeSection>
+        </div>
       </section>
 
-      <div className="mx-auto h-[1px] max-w-7xl bg-gradient-to-r from-transparent via-gold/25 to-transparent" />
-
       {/* ═══════════════════ HOW IT WORKS ═══════════════════ */}
-      <section className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
+      <section className="relative bg-[#0e1014]">
+        <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <FadeSection id="how-label">
           <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">Process</p>
         </FadeSection>
@@ -466,6 +465,7 @@ export default function Home() {
               </div>
             </FadeSection>
           ))}
+          </div>
         </div>
       </section>
 
@@ -488,7 +488,8 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ THE DIFFERENCE ═══════════════════ */}
-      <section id="difference" className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
+      <section id="difference" className="relative bg-[#0e1014]">
+        <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <div className="grid items-start gap-16 lg:grid-cols-2">
           <div>
             <FadeSection id="diff-label">
@@ -525,12 +526,12 @@ export default function Home() {
             </div>
           </FadeSection>
         </div>
+        </div>
       </section>
 
-      <div className="mx-auto h-[1px] max-w-7xl bg-gradient-to-r from-transparent via-gold/25 to-transparent" />
-
       {/* ═══════════════════ FAQ ═══════════════════ */}
-      <section id="faq" className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
+      <section id="faq">
+        <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <FadeSection id="faq-label">
           <p className="font-[var(--font-cinzel)] text-[10px] uppercase tracking-[0.3em] text-gold/70">Questions</p>
         </FadeSection>
@@ -557,12 +558,12 @@ export default function Home() {
             </FadeSection>
           ))}
         </div>
+        </div>
       </section>
 
-      <div className="mx-auto h-[1px] max-w-7xl bg-gradient-to-r from-transparent via-gold/25 to-transparent" />
-
       {/* ═══════════════════ CONTACT ═══════════════════ */}
-      <section id="contact" className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
+      <section id="contact" className="relative bg-[#0e1014]">
+        <div className="mx-auto w-full max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <div className="grid gap-16 lg:grid-cols-2">
           <div>
             <FadeSection id="contact-label">
@@ -593,6 +594,7 @@ export default function Home() {
               <ContactForm />
             </div>
           </FadeSection>
+        </div>
         </div>
       </section>
 
