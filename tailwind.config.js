@@ -35,11 +35,21 @@ module.exports = {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(20px)" },
         },
+        "spin-very-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        "spin-reverse": {
+          "0%": { transform: "rotate(360deg)" },
+          "100%": { transform: "rotate(0deg)" },
+        },
       },
       animation: {
         foilSweep: "foilSweep 6s ease-in-out infinite",
         "float-slow": "float-slow 12s ease-in-out infinite",
         "float-slower": "float-slower 16s ease-in-out infinite",
+        "spin-very-slow": "spin-very-slow 45s linear infinite",
+        "spin-reverse": "spin-reverse 35s linear infinite",
       },
     },
   },
