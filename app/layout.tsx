@@ -46,6 +46,13 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/favicon.svg",
+  },
+  metadataBase: new URL("https://www.revelationinc.ai"),
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
