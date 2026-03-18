@@ -8,12 +8,12 @@ module.exports = {
     extend: {
       colors: {
         obsidian: "#0B0C10",
-        gold: "#C5A059",
-        champagne: "#E1C38F",
+        gold: "#B8996F",
+        champagne: "#D4C4A0",
         ivory: "#F2F2F2",
       },
       boxShadow: {
-        glow: "0 0 0 1px rgba(197, 160, 89, 0.15), 0 16px 40px rgba(0, 0, 0, 0.45)",
+        glow: "0 0 0 1px rgba(184, 153, 111, 0.15), 0 16px 40px rgba(0, 0, 0, 0.45)",
       },
       keyframes: {
         foilSweep: {

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cinzel, Inter } from "next/font/google";
+import { Cinzel, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -8,7 +8,7 @@ const cinzel = Cinzel({
   variable: "--font-cinzel",
 });
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-inter",
@@ -63,7 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cinzel.variable} ${inter.variable} bg-obsidian text-ivory antialiased`}
+        className={`${cinzel.variable} ${dmSans.variable} bg-obsidian text-ivory antialiased`}
       >
         {children}
       </body>

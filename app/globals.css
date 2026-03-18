@@ -4,8 +4,8 @@
 
 :root {
   --obsidian: #0b0c10;
-  --gold: #c5a059;
-  --champagne: #e1c38f;
+  --gold: #b8996f;
+  --champagne: #d4c4a0;
   --ivory: #f2f2f2;
 }
 
@@ -47,7 +47,7 @@ h3,
 
 /* ─── Selection styling ─── */
 ::selection {
-  background: rgba(197, 160, 89, 0.3);
+  background: rgba(184, 153, 111, 0.3);
   color: var(--ivory);
 }
 
@@ -61,12 +61,12 @@ h3,
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(197, 160, 89, 0.2);
+  background: rgba(184, 153, 111, 0.2);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(197, 160, 89, 0.4);
+  background: rgba(184, 153, 111, 0.4);
 }
 
 /* ─── Reduced motion ─── */
